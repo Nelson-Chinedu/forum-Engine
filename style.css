@@ -1,0 +1,404 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    line-height: 1.6em;
+    font-size: 16px;
+    font-family: verdana,arial;
+    width: 100%;
+}
+.main-header-lg{
+    display: none;
+}
+.header-one .logo-name{
+    display: inline;
+    color: #fff;
+    font-family:arial;
+    font-size: 18px;
+    padding: 0 15px;
+}
+.logo-name .logo-fade{
+    font-weight: lighter;
+}
+.header-one .search{
+    float: right;
+    background: rgb(7, 192, 152);
+    border: 0;
+    outline: none;
+    color: #fff;
+    padding:  16px 18px;
+    margin: 0;
+}
+.header-one{
+    background: #000;
+    line-height:48px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.header-two{
+    background: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 48px;
+    overflow: hidden;
+}
+.icon{
+    margin: 0 10px;
+    padding: 15px 0;
+    cursor: pointer;
+    width: 12%;
+}
+.icon-bar{
+    background: rgb(231, 231, 231);
+    margin: 4px;
+    width: 30px;
+    height: 3px;
+    cursor: pointer;
+}
+.icon-content{
+    display: none;
+    margin: 10px 15px;
+    padding: 0px 0;
+    width: 100%;
+}
+.icon-content li{
+    list-style: none;
+    margin: 10px 0;
+    width: 100%;
+}
+.icon-content li a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 0;
+}
+.header-three{
+    margin: 0;
+    padding: 0;
+}
+.header-three .nav-sm{
+    list-style: none;
+    background: rgba(177, 177, 177, 0.377);
+    overflow: hidden;
+    margin: 0 0 10px;
+    padding: 0;
+    line-height: 50px;
+    text-align: center;
+}
+.header-three .nav-sm li{
+    display: inline;
+}
+.header-three .nav-sm .active a{
+    background: #fff;
+    border-top: 5px solid rgb(7, 192, 152);
+}
+.header-three .nav-sm li a{
+    color:rgb(77, 77, 77);
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding:14px 5px 18px;
+}
+.header-three .nav-sm li+li:before{
+    content: "/";
+}
+.badge{
+    color: #fff;
+    font-size: 12px;
+}
+.badge-red{
+    background: red;
+    border-radius: 200%;
+    padding: 2px 5px;
+}
+.badge-grey{
+    background: grey;
+    border-radius: 200%;
+    padding: 2px 5px;
+}
+.content .btn-new-lg{
+    display: none;
+}
+.content .btn-new-sm{
+    padding: 10px 20px;
+    margin:0 auto;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid rgba(173, 173, 173, 0.329);
+    background: transparent;
+    color: grey;
+    width: 100%;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 200%;
+    float: left;
+    margin: 5px 10px;
+}
+#content-lg{
+    display:none;
+}
+p .color-yl{
+    background: rgba(197, 169, 10, 0.733);
+    padding: 1px 8px;
+    margin-right:5px;
+}
+p .color-gn{
+    background: rgb(2, 131, 35);
+    padding: 1px 8px;
+    margin-right:5px;
+}
+p .color-og{
+    background: rgba(180, 104, 5, 0.733);
+    padding: 1px 8px;
+    margin-right:5px;
+}
+.card-container{
+    margin: 20px 0;
+}
+.card .topic{
+    color:rgb(65, 65, 65);
+    margin: 0;
+}
+.card .trend{
+    color:#000;
+}
+.card p{
+    margin: 0 0 0 70px;
+    color: rgb(105, 105, 105);
+    font-size: 14px;
+}
+.card-fade{
+    background: rgba(177, 177, 177, 0.26);
+    overflow: auto;
+}
+.side-nav{
+    display: none;
+}
+
+
+/* desktop */
+@media only screen and (min-width:769px){
+    .main-header-sm{
+        display: none;
+    }
+    .content .btn-new-sm{
+        display: none;
+    }
+    #content-sm{
+        display:none;
+    }
+    .main-header-lg{
+        display: block;
+    }
+    .main-header-lg .img-lg{
+        float: right;
+    }
+    .content .btn-new-lg{
+        display: block;
+    }
+    #content-lg{
+        display:block;
+    }
+    .header-one{
+        text-align:right;
+    }
+    .header-one .header-one-group{
+        width:80%;
+        margin:auto;
+    }
+    .header-one-group button{
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 28px;
+        cursor: pointer;
+        transition: all .4s;
+    }
+    .header-one-group button:hover{
+        background: rgb(32, 150, 124);
+    }
+    .header-one .logo-name{
+        margin:0 50px;
+    }
+    .logo-name .logo-fade-lg{
+        font-weight: lighter;
+    }
+    .header-one .input-search{
+        width: 30%;
+        margin: 12px 10px 0 50px;
+        padding:8px;
+        border-radius:4px;
+        border:none;
+        outline:none;
+    }
+    .header-one button{
+        background:rgb(7, 192, 152);
+        border:0;
+        padding:8px;
+        margin:0 90px 0 0;
+        border-radius:4px;
+    }
+    .profile-name{
+        color: #fff;
+        margin:0 10px 0 50px;
+    }
+    .img-lg{
+        margin:3px 0;
+    }
+    .header-two{
+        background:rgba(228, 228, 228, 0.57);
+    }
+    .header-two .nav-lg{
+        list-style:none;
+        overflow:hidden;
+        text-align:left;
+        width:66%;
+        margin:0 auto;
+    }    
+    .nav-lg li{
+        display:inline;
+    }
+    .nav-lg li a{
+        color:#000;
+        text-decoration:none;
+        padding: 10px 18px 16px;
+        transition: all .4s;
+    }
+    .nav-lg li a:hover{
+        background: #fff;
+        border-top: 5px solid rgb(7, 192, 152);
+    }
+    .badge-lg{
+        color: #fff;
+        font-size: 12px;
+    }
+    .badge-red-lg{
+        background: red;
+        border-radius: 200%;
+        padding: 2px 5px;
+    }
+    .badge-grey-lg{
+        background: grey;
+        border-radius: 200%;
+        padding: 2px 5px;
+    }
+    #content-lg{
+        width:48%;
+        margin:20px 0% 0 20%;
+        float:left;
+    }
+    .btn-new-lg{
+        padding: 8px 20px;
+        margin:0 auto;
+        font-size: 18px;
+        text-align: left;
+        border: 2px solid rgba(173, 173, 173, 0.329);
+        background: transparent;
+        color: grey;
+        cursor:pointer;
+        transition: all .4s;
+        width: 100%;
+    }
+    .btn-new-lg:hover{
+        background:#efeeee;
+        color:#000;
+    }
+    .card-container{
+        margin: 20px 0;
+    }
+    .card-lg .topic{
+        color:rgb(65, 65, 65);
+        margin: 0;
+    }
+    .card-lg p{
+        margin: 0 0 0 70px;
+        color: rgb(105, 105, 105);
+        font-size: 14px;
+    }
+    .card-fade{
+        background: rgba(177, 177, 177, 0.26);
+        overflow: auto;
+    }
+    .grey-lg{
+        background:#efeeee;
+        overflow:hidden;
+    }
+    .load{
+        margin: 20px 0 0 0;
+        padding: 0;
+        text-align: center;
+    }
+    .load p{
+        margin: 0px;
+        padding: 0px;
+    }
+    .load .load-thread{
+        margin: 0;
+        padding: 0;
+        background: rgb(30, 156, 129);;
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        border: 0;
+        border-radius: 100%;
+    }
+    .side-nav{
+        display: block;
+        font-size: 14px;
+        margin:20px 10% 0 0;
+        padding:0px 0 0 0;
+        float:right;
+        width:15%;
+    }
+    p .colors{
+        padding: 10px 10px;
+        margin:2px 2px;
+        float: right;
+    }
+    p .color-yl-lg{
+        background: rgb(240, 224, 5);
+    }
+    p .color-bl-lg{
+        background: rgb(16, 117, 175);
+    }
+    p .color-gn-lg{
+        background: rgb(16, 175, 56);
+    }
+    p .color-in-lg{
+        background: rgb(175, 16, 95);
+    }
+    p .color-or-lg{
+        background: rgb(175, 111, 16);
+    }
+    p .color-pu-lg{
+        background: rgb(175, 16, 114);
+    }
+    p .color-re-lg{
+        background: rgb(175, 16, 42);
+    }
+    .accordion p{
+        margin:0;
+        padding:5px 15px;
+    }
+    #accordion-all, .content-fashion, .content-women{
+        display: none;
+    }
+    .side-active > p:first-child{
+        background:#efeeee;
+        cursor: pointer;
+    }
+    .btn-fashion, .btn-women{
+        cursor: pointer;
+    }
+    .content-women, .content-fashion{
+        padding: 0 20px;
+    }
+}
+
